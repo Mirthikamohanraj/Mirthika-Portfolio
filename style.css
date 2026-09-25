@@ -1,0 +1,688 @@
+/* =====================================================
+   BASIC SETTINGS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+#themeToggle {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   HOME / HERO
+===================================================== */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.intro {
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.secondary-btn:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-text {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.education-card h4 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skill-category {
+    margin-bottom: 35px;
+}
+
+.skill-category h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    padding: 10px 18px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    text-align: center;
+}
+
+.project-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.project-category {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.project-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.project-features span {
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   INTERNSHIP
+===================================================== */
+
+.internship-card {
+    max-width: 750px;
+    margin: auto;
+}
+
+.internship-card h4 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CERTIFICATIONS
+===================================================== */
+
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.certification-card {
+    text-align: center;
+}
+
+.certification-card h3 {
+    margin: 0;
+}
+
+
+/* CERTIFICATE ISSUER */
+
+.certificate-issuer {
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 6px 0;
+}
+
+.certification-card p {
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   CURRENTLY LEARNING
+===================================================== */
+
+.learning-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.learning-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.learning-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   CAREER GOAL
+===================================================== */
+
+.career-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   ADMIN LOGIN
+===================================================== */
+
+.admin-login {
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-login input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.admin-login button {
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-login button:hover {
+    background-color: #1d4ed8;
+}
+
+#loginMessage {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   ADMIN DASHBOARD
+===================================================== */
+
+.admin-dashboard {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.admin-header h3 {
+    color: #2563eb;
+    font-size: 24px;
+}
+
+#logoutButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#logoutButton:hover {
+    background-color: #b91c1c;
+}
+
+
+/* RESPONSE CARD */
+
+.response-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.response-card h4 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.response-card p {
+    margin: 6px 0;
+}
+
+.response-time {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.no-responses {
+    text-align: center;
+    padding: 25px;
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contactForm button {
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #1d4ed8;
+}
+
+#responseMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #111827;
+    color: white;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark .navbar {
+    background-color: #1f2937;
+}
+
+body.dark .nav-links a {
+    color: white;
+}
+
+body.dark .card {
+    background-color: #1f2937;
+}
+
+body.dark .skill {
+    background-color: #1f2937;
+}
+
+body.dark .learning-item {
+    background-color: #1f2937;
+}
+
+body.dark .career-box {
+    background-color: #1f2937;
+}
+
+body.dark .hero {
+    background: #111827;
+}
+
+body.dark .hero h2 {
+    color: white;
+}
+
+body.dark #contactForm input,
+body.dark #contactForm textarea {
+    background-color: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark .project-features span {
+    background-color: #1f2937;
+}
+
+body.dark .admin-login {
+    background-color: #1f2937;
+}
+
+body.dark .admin-login input {
+    background-color: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark .response-card {
+    background-color: #1f2937;
+}
+
+body.dark .certificate-issuer {
+    color: #9ca3af;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .admin-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
